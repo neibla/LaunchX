@@ -1,0 +1,26 @@
+// A launch configuration that launches the extension inside a new window
+// Use IntelliSense to learn about possible attributes.
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "Extension",
+			"type": "extensionHost",
+			"request": "launch",
+			"runtimeExecutable": "${execPath}",
+			"args": [
+				"--extensionDevelopmentPath=${workspaceFolder}"
+			]
+		},
+		{
+			"name": "Extension Tests",
+			"type": "extensionHost",
+			"request": "launch",
+			"runtimeExecutable": "${execPath}",
+			"args": [
+				"--extensionDevelopmentPath=${workspaceFolder}",
+				"--extensionTestsPath=${workspaceFolder}/test"
+			]
+		}
+	]
+}

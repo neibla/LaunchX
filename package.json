@@ -1,0 +1,63 @@
+{
+	"name": "launchx",
+	"displayName": "LaunchX",
+	"description": "VSCode shortcut for launching site searches eg stackoverflow, google, github",
+	"version": "0.0.1",
+	"engines": {
+		"vscode": "^1.35.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onCommand:extension.launchx.google",
+		"onCommand:extension.launchx.stackoverflow",
+		"onCommand:extension.launchx.github",
+		"onCommand:extension.launchx.youtube",
+		"onCommand:extension.launchx.duckduckgo",
+		"onCommand:extension.launchx.bing"
+	],
+	"main": "./out/extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "extension.launchx.stackoverflow",
+				"title": "LaunchX:  StackOverflow search"
+			},
+			{
+				"command": "extension.launchx.google",
+				"title": "LaunchX: Google search"
+			},
+			{
+				"command": "extension.launchx.github",
+				"title": "LaunchX: GitHub search"
+			},
+			{
+				"command": "extension.launchx.youtube",
+				"title": "LaunchX: YouTube search"
+			},
+			{
+				"command": "extension.launchx.duckduckgo",
+				"title": "LaunchX: DuckDuckGo search"
+			},
+			{
+				"command": "extension.launchx.bing",
+				"title": "LaunchX: Bing search"
+			}
+		]
+	},
+	"scripts": {
+		"vscode:prepublish": "yarn run compile",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"test": "yarn run compile && node ./node_modules/vscode/bin/test"
+	},
+	"devDependencies": {
+		"typescript": "^3.3.1",
+		"vscode": "^1.1.28",
+		"tslint": "^5.12.1",
+		"@types/node": "^10.12.21",
+		"@types/mocha": "^2.2.42"
+	}
+}

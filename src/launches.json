@@ -1,0 +1,26 @@
+[
+    {
+        "extension": "github",
+        "path": "https://github.com/search?utf8=%E2%9C%93&q="
+    },
+    {
+        "extension": "stackoverflow",
+        "path": "https://stackoverflow.com/search?q="
+    },
+    {
+        "extension": "google",
+        "path": "https://www.google.com/search?q="
+    },
+    {
+        "extension": "youtube",
+        "path": "https://www.youtube.com/results?search_query="
+    },
+    {
+        "extension": "duckduckgo",
+        "path": "https://duckduckgo.com/?q="
+    },
+    {
+        "extension": "bing",
+        "path": "https://www.bing.com/search?q="
+    }
+]
