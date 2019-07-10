@@ -16,5 +16,6 @@ LaunchX provides a VSCode shortcut to launch searches including:
 Repeat with any other supported search sources. 
 
 ## Future Work
+- Keyboard shortcuts...
 - Configurable sources
 - Queryless launches 
