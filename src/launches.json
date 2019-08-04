@@ -4,6 +4,14 @@
         "path": "https://github.com/search?utf8=%E2%9C%93&q="
     },
     {
+        "extension": "github.gist",
+        "path": "https://gist.github.com/search?utf8=%E2%9C%93&q="
+    },
+    {
+        "extension": "github.gist.new",
+        "path": "https://gist.github.com"
+    },
+    {
         "extension": "stackoverflow",
         "path": "https://stackoverflow.com/search?q="
     },

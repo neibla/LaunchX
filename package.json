@@ -1,89 +1,137 @@
 {
-	"name": "launchx",
-	"displayName": "LaunchX",
-	"description": "VSCode shortcut for launching site searches including stackoverflow, google, github, youtube, duckduckgo, and even bing!",
-	"version": "0.0.1",
-	"publisher": "neibla",
-	"author": {
-		"name": "Neil Blake",
-		"email": "neil0blake@gmail.com",
-		"url": "https://github.com/neibla"
-	},
-	"license": "MIT",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/neibla/launchX.git"
-	},
-	"engines": {
-		"vscode": "^1.35.0"
-	},
-	"categories": [
-		"Other"
-	],
-	"keywords": [
-		"search",
-		"query",
-		"google",
-		"stackoverflow",
-		"github",
-		"youtube",
-		"lmgtfy",
-		"duckduckgo",
-		"bing",
-		"productivity"
-	],
-	"activationEvents": [
-		"onCommand:extension.launchx.google",
-		"onCommand:extension.launchx.stackoverflow",
-		"onCommand:extension.launchx.github",
-		"onCommand:extension.launchx.youtube",
-		"onCommand:extension.launchx.duckduckgo",
-		"onCommand:extension.launchx.bing"
-	],
-	"main": "./out/extension.js",
-	"icon": "images/icon.png",
-	"contributes": {
-		"commands": [
-			{
-				"command": "extension.launchx.stackoverflow",
-				"title": "LaunchX:  StackOverflow search"
-			},
-			{
-				"command": "extension.launchx.google",
-				"title": "LaunchX: Google search"
-			},
-			{
-				"command": "extension.launchx.github",
-				"title": "LaunchX: GitHub search"
-			},
-			{
-				"command": "extension.launchx.youtube",
-				"title": "LaunchX: YouTube search"
-			},
-			{
-				"command": "extension.launchx.duckduckgo",
-				"title": "LaunchX: DuckDuckGo search"
-			},
-			{
-				"command": "extension.launchx.bing",
-				"title": "LaunchX: Bing search"
-			}
-		]
-	},
-	"scripts": {
-		"vscode:prepublish": "yarn run compile",
-		"compile": "tsc -p ./",
-		"watch": "tsc -watch -p ./",
-		"vscode:package": "vsce package",
-		"vscode:publish": "vsce publish",
-		"test": "yarn run compile && node ./node_modules/vscode/bin/test"
-	},
-	"devDependencies": {
-		"@types/mocha": "^5.2.7",
-		"@types/node": "^12.6.9",
-		"@types/vscode": "^1.36.0",
-		"tslint": "^5.18.0",
-		"typescript": "^3.5.3",
-		"vsce": "^1.66.0"
-	}
+  "name": "launchx",
+  "displayName": "LaunchX",
+  "description": "VSCode shortcut for launching site searches including stackoverflow, google, github/gist, youtube, duckduckgo, and even bing!",
+  "version": "0.0.1",
+  "publisher": "neibla",
+  "author": {
+    "name": "Neil Blake",
+    "email": "neil0blake@gmail.com",
+    "url": "https://github.com/neibla"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/neibla/launchX.git"
+  },
+  "engines": {
+    "vscode": "^1.35.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "keywords": [
+    "launch",
+    "search",
+    "query",
+    "help",
+    "find",
+    "tutorial",
+    "google",
+    "stackoverflow",
+    "github",
+    "youtube",
+    "lmgtfy",
+    "duckduckgo",
+    "bing",
+    "productivity"
+  ],
+  "activationEvents": [
+    "onCommand:extension.launchx.google",
+    "onCommand:extension.launchx.stackoverflow",
+    "onCommand:extension.launchx.github",
+    "onCommand:extension.launchx.github.gist",
+    "onCommand:extension.launchx.github.gist.new",
+    "onCommand:extension.launchx.youtube",
+    "onCommand:extension.launchx.duckduckgo",
+    "onCommand:extension.launchx.bing"
+  ],
+  "main": "./out/extension.js",
+  "icon": "images/icon.png",
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.launchx.stackoverflow",
+        "title": "LaunchX:  StackOverflow search"
+      },
+      {
+        "command": "extension.launchx.google",
+        "title": "LaunchX: Google search"
+      },
+      {
+        "command": "extension.launchx.github",
+        "title": "LaunchX: GitHub search"
+      },
+      {
+        "command": "extension.launchx.github.gist",
+        "title": "LaunchX: GitHub Gist search"
+      },
+      {
+        "command": "extension.launchx.github.gist.new",
+        "title": "LaunchX: New GitHub Gist"
+      },
+      {
+        "command": "extension.launchx.youtube",
+        "title": "LaunchX: YouTube search"
+      },
+      {
+        "command": "extension.launchx.duckduckgo",
+        "title": "LaunchX: DuckDuckGo search"
+      },
+      {
+        "command": "extension.launchx.bing",
+        "title": "LaunchX: Bing search"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "extension.launchx.google",
+        "key": "ctrl+alt+g"
+      },
+      {
+        "command": "extension.launchx.stackoverflow",
+        "key": "ctrl+alt+s"
+      },
+      {
+        "command": "extension.launchx.github",
+        "key": "ctrl+alt+i"
+      },
+      {
+        "command": "extension.launchx.github.gist",
+        "key": "ctrl+alt+t"
+      },
+      {
+        "command": "extension.launchx.github.gist.new",
+        "key": "ctrl+alt+n"
+      },
+      {
+        "command": "extension.launchx.youtube",
+        "key": "ctrl+alt+y"
+      },
+      {
+        "command": "extension.launchx.duckduckgo",
+        "key": "ctrl+alt+d"
+      },
+      {
+        "command": "extension.launchx.bing",
+        "key": "ctrl+alt+b"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "yarn run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "vscode:package": "vsce package",
+    "vscode:publish": "vsce publish",
+    "test": "yarn run compile && node ./node_modules/vscode/bin/test"
+  },
+  "devDependencies": {
+    "@types/mocha": "^5.2.7",
+    "@types/node": "^12.6.9",
+    "@types/vscode": "^1.36.0",
+    "tslint": "^5.18.0",
+    "typescript": "^3.5.3",
+    "vsce": "^1.66.0"
+  }
 }

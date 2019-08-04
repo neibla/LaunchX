@@ -25,7 +25,7 @@ const resolveSearchUri = (path: string, search: string) => `${path}${encodeURI(s
 
 const launchSearch = (path: string, search: string) => {
 	const searchUri = resolveSearchUri(path, search);
-	vscode.commands.executeCommand("vscode.open", vscode.Uri.parse(searchUri));
+	vscode.env.openExternal(vscode.Uri.parse(searchUri));
 };
 
 export function deactivate() { }
