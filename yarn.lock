@@ -260,7 +260,7 @@ linkify-it@^2.0.0:
   dependencies:
     uc.micro "^1.0.1"
 
-lodash@^4.15.0, lodash@^4.17.15:
+lodash@^4.15.0, lodash@^4.17.10:
   version "4.17.15"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.15.tgz#b447f6670a0455bbfeedd11392eff330ea097548"
 
@@ -466,9 +466,9 @@ util-deprecate@^1.0.1:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/util-deprecate/-/util-deprecate-1.0.2.tgz#450d4dc9fa70de732762fbd2d4a28981419a0ccf"
 
-vsce@^1.66.0:
-  version "1.66.0"
-  resolved "https://registry.yarnpkg.com/vsce/-/vsce-1.66.0.tgz#8cf1d64a4825d5d0523ea5efd0bf41e2c6829565"
+vsce@^1.71.0:
+  version "1.71.0"
+  resolved "https://registry.yarnpkg.com/vsce/-/vsce-1.71.0.tgz#3018cbea9e4dff4aeae86a09c3416e45b46bb6b3"
   dependencies:
     azure-devops-node-api "^7.2.0"
     chalk "^2.4.2"
