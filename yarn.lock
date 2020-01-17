@@ -260,7 +260,7 @@ linkify-it@^2.0.0:
   dependencies:
     uc.micro "^1.0.1"
 
-lodash@^4.15.0, lodash@^4.17.15:
+lodash@^4.15.0, lodash@^4.17.10:
   version "4.17.15"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.15.tgz#b447f6670a0455bbfeedd11392eff330ea097548"
 
@@ -446,9 +446,9 @@ typed-rest-client@1.2.0:
     tunnel "0.0.4"
     underscore "1.8.3"
 
-typescript@^3.5.3:
-  version "3.5.3"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.5.3.tgz#c830f657f93f1ea846819e929092f5fe5983e977"
+typescript@^3.7.5:
+  version "3.7.5"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.7.5.tgz#0692e21f65fd4108b9330238aac11dd2e177a1ae"
 
 uc.micro@^1.0.1, uc.micro@^1.0.5:
   version "1.0.6"
