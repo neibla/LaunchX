@@ -24,9 +24,9 @@
   version "12.6.9"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-12.6.9.tgz#ffeee23afdc19ab16e979338e7b536fdebbbaeaf"
 
-"@types/vscode@^1.36.0":
-  version "1.36.0"
-  resolved "https://registry.yarnpkg.com/@types/vscode/-/vscode-1.36.0.tgz#ae60242e893d9eda9a0d96d51ef56f1a3fae14ed"
+"@types/vscode@^1.42.0":
+  version "1.42.0"
+  resolved "https://registry.yarnpkg.com/@types/vscode/-/vscode-1.42.0.tgz#0ad891a9487e91e34be7c56985058a179031eb76"
 
 ansi-styles@^3.2.1:
   version "3.2.1"
@@ -260,7 +260,7 @@ linkify-it@^2.0.0:
   dependencies:
     uc.micro "^1.0.1"
 
-lodash@^4.15.0, lodash@^4.17.15:
+lodash@^4.15.0, lodash@^4.17.10:
   version "4.17.15"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.15.tgz#b447f6670a0455bbfeedd11392eff330ea097548"
 
