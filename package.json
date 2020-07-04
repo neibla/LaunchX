@@ -127,7 +127,7 @@
     "test": "yarn run compile && node ./node_modules/vscode/bin/test"
   },
   "devDependencies": {
-    "@types/mocha": "^5.2.7",
+    "@types/mocha": "^7.0.2",
     "@types/node": "^12.6.9",
     "@types/vscode": "^1.46.0",
     "tslint": "^6.1.1",
