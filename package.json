@@ -1,7 +1,7 @@
 {
   "name": "launchx",
   "displayName": "LaunchX",
-  "description": "VSCode shortcut for launching site searches including stackoverflow, google, github/gist, youtube, duckduckgo, and even bing!",
+  "description": "VSCode shortcut for launching site searches including stackoverflow, google, github/gist, youtube, duckduckgo, njt, and even bing!",
   "version": "0.0.1",
   "publisher": "neibla",
   "author": {
@@ -34,6 +34,7 @@
     "lmgtfy",
     "duckduckgo",
     "bing",
+    "njt",
     "productivity"
   ],
   "activationEvents": [
@@ -44,7 +45,8 @@
     "onCommand:extension.launchx.github.gist.new",
     "onCommand:extension.launchx.youtube",
     "onCommand:extension.launchx.duckduckgo",
-    "onCommand:extension.launchx.bing"
+    "onCommand:extension.launchx.bing",
+    "onCommand:extension.launchx.njt"
   ],
   "main": "./out/extension.js",
   "icon": "images/icon.png",
@@ -81,6 +83,10 @@
       {
         "command": "extension.launchx.bing",
         "title": "LaunchX: Bing search"
+      },
+      {
+        "command": "extension.launchx.njt",
+        "title": "LaunchX: njt (npm jump to)"
       }
     ],
     "keybindings": [
@@ -115,6 +121,10 @@
       {
         "command": "extension.launchx.bing",
         "key": "ctrl+alt+b"
+      },
+      {
+        "command": "extension.launchx.njt",
+        "key": "ctrl+alt+n"
       }
     ]
   },

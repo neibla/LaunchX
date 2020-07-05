@@ -30,5 +30,9 @@
     {
         "extension": "bing",
         "path": "https://www.bing.com/search?q="
+    },
+    {
+        "extension": "njt",
+        "path": "https://njt.now.sh/jump?from=vscode.launchx&to="
     }
 ]
