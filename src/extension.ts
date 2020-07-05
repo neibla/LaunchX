@@ -16,7 +16,9 @@ const registerLaunch = (extension: string, path: string) => {
 		const search = await vscode.window.showInputBox({
 			placeHolder: 'Search',
 		});
-		launchSearch(path, search || "");
+		if (typeof search === "string") {
+			launchSearch(path, search);
+		}
 	});
 	return disposable;
 };
