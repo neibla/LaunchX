@@ -2,7 +2,7 @@
   "name": "launchx",
   "displayName": "LaunchX",
   "description": "VSCode shortcut for launching site searches including stackoverflow, google, github/gist, youtube, duckduckgo, njt, and even bing!",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publisher": "neibla",
   "author": {
     "name": "Neil Blake",
@@ -15,7 +15,7 @@
     "url": "https://github.com/neibla/launchX.git"
   },
   "engines": {
-    "vscode": "^1.35.0"
+    "vscode": "^1.46.0"
   },
   "categories": [
     "Other"
